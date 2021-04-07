@@ -7,8 +7,8 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --primary-black-color: #000000;
+  --primary-background-color: #ffffff;
+  --logo-header-color: #000000;
 }
 
 body {
@@ -18,8 +18,28 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Page header */
+
+.page-header {
 }
 
 .logo {
@@ -33,11 +53,11 @@ body {
 }
 
 .logo .studio {
-  color: var(--primary-black-color);
+  color: var(--logo-header-color);
 }
 
 .logo .studio-footer {
-  color: var(--primary-white-color);
+  color: var(--primary-background-color);
 }
 
 /* Site nav */
@@ -60,7 +80,7 @@ body {
 
 /* Contacts list */
 .contacts-list .link {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -80,23 +100,28 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero .hero-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: var(--primary-background-color);
 }
 
 /* Section */
 
-.team {
-  background: #f5f4fa;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -105,8 +130,12 @@ body {
   color: var(--title-text-color);
 }
 
+}
+
 /* Features */
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -115,27 +144,39 @@ body {
 }
 
 .feature-list .text {
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* Team */
 
-.team-list .title {
+.team {
+  background: #f5f4fa;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--title-text-color);
-  text-decoration: none;
 }
 
 .team-list .profession {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.team-list .photo{
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -144,10 +185,21 @@ body {
   background: #2f303a;
 }
 
+footer .logo {
+  margin-top: 60;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-style: normal;
+}
+
 .adress {
+  margin-top: 0;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-white-color);
+  color: var(--primary-background-color);
 }
 
 .footer-list .link {
@@ -164,7 +216,10 @@ body {
 
 /* ПОРТФОЛІО */
 
-.filters-list .link {
+.filters-list .filter {
+  min-width: none;
+  display: inline-block;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -173,14 +228,18 @@ body {
   cursor: pointer;
 }
 
-.filters-list .link:hover,
-.filters-list .link:focus {
-  color: var(--primary-white-color);
+.filters-list .filter:hover,
+.filters-list .filter:focus {
+  color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
 
 .projects-list .link {
   text-decoration: none;
+}
+
+.projects-list .illustration {
+  margin-bottom: 20px;
 }
 
 .projects-list .name {
@@ -189,22 +248,24 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .projects-list .description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 /* Button */
 .button {
-  color: var(--primary-white-color);
+  padding: 10px 32px;
+  color: var(--primary-background-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
