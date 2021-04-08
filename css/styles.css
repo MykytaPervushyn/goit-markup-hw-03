@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -137,6 +137,7 @@ p {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 /* Features */
@@ -184,6 +185,7 @@ p {
 .team-list .photo {
   margin-top: 0;
   margin-bottom: 30px;
+  display: block;
 }
 
 /* Footer */
@@ -241,6 +243,7 @@ footer .logo {
 
 .projects-list .illustration {
   margin-bottom: 20px;
+  display: block;
 }
 
 .projects-list .name {
