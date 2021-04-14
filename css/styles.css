@@ -73,12 +73,12 @@ p {
 /* Page header */
 
 .page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header .nav {
@@ -162,6 +162,9 @@ p {
 }
 
 .hero .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -295,9 +298,6 @@ p {
 
 .footer {
   background: #2f303a;
-}
-
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -315,7 +315,7 @@ p {
 }
 
 .mail {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-list .link {
@@ -326,15 +326,10 @@ p {
 
 /* ПОРТФОЛІО */
 
-.container.portfolio {
-  padding-bottom: 94px;
-}
-
 .filters-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filters-list .item {
@@ -354,6 +349,9 @@ p {
   line-height: 1.62;
   text-align: center;
   color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  border: transparent;
+  border-radius: 4px;
   cursor: pointer;
 }
 
