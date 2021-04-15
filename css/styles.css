@@ -304,10 +304,10 @@ p {
 
 .footer-text {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .adress {
-  margin-top: 20px;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
